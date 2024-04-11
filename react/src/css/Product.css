@@ -1,0 +1,133 @@
+.product {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 200px;
+  position: relative;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.product-name {
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.2;
+  max-height: 4.4em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.product-image-container {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  object-fit: contain;
+}
+
+.product-promotion {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #FF4742; 
+  color: white;
+  padding: 0.5em;
+  font-size: 0.75em; 
+  border-radius: 0 0 3px 0;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-store {
+  font-style: italic;
+  color: #666;
+  font-size: 0.8em;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.product-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.product-original-price {
+  text-decoration: line-through;
+  color: #999;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.product-sale-info {
+  background: #e1f7d5;
+  border-left: 4px solid #4CAF50;
+  padding: 0.5em;
+  font-size: 0.85em;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.product .select-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+  align-self: center;
+  font-size: 0.9em;
+}
+
+.product.selected .select-button {
+  background-color: #f44336;
+}
+
+.product.selected {
+  border: 2px solid #4CAF50;
+}
+.product-info a {
+  text-decoration:none;
+}
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.product-name:hover {
+  transform: scale(1.1);
+  -webkit-line-clamp: none;
+  max-height: none;
+  
+}
+

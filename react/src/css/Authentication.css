@@ -1,0 +1,59 @@
+.modal-header,
+.modal-footer {
+  border-bottom: 0;
+  border-top: 0;
+  padding: 1rem 1.5rem;
+}
+
+.modal-content {
+  border-radius: 0.3rem;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #146c43;
+  border-color: #146c43;
+}
+
+.btn-link {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  text-decoration: underline;
+}
+
+.empty {
+  border-color: red !important;
+}
