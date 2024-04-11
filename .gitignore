@@ -1,5 +1,4 @@
 node/node_modules
-node/.env
 react/node_modules
 scraper/.scrapy
 scraper/scraper/__pycache__
