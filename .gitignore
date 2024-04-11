@@ -3,3 +3,5 @@ node/.env
 react/node_modules
 scraper/.scrapy
 scraper/scraper/__pycache__
+package.json
+.vscode
